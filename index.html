@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb Homepage Lite</title>
+    <!-- CRITICAL: DO NOT REMOVE/MODIFY THIS COMMENT OR THE SCRIPT BELOW -->
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container header-content">
+                <div class="logo">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                        focusable="false" style="display:block; fill:hsl(var(--primary)); height:32px; width:32px;">
+
+                        <path
+                            d="M16 1c2.008 0 3.463.963 4.751 3.269l.533 1.025c.195.379.414.821.66 1.325l.247.52c.114.239.233.49.356.753l.248.541c.683 1.544 1.365 3.143 2.042 4.774 2.784 6.709 4.083 11.54 3.933 14.59-.048.98-.327 1.72-.823 2.222-.547.554-1.239.824-2.073.824-1.127 0-2.31-.478-3.414-1.408A11.002 11.002 0 0 1 18 20.31a10.957 10.957 0 0 1-2 0 11.002 11.002 0 0 1-4.153 3.923c-1.104.93-2.287 1.408-3.414 1.408-.834 0-1.526-.27-2.073-.824-.496-.502-.775-1.242-.823-2.222-.15-3.051 1.149-7.881 3.933-14.59.677-1.631 1.359-3.23 2.042-4.774l.248-.54c.123-.264.242-.515.356-.754l.247-.519c.246-.504.465-.946.66-1.325l.533-1.025C12.537 1.963 13.992 1 16 1zm0 2c-1.239 0-2.053.539-2.987 2.21l-.523 1.008c-.183.353-.39.773-.626 1.25l-.265.556c-.11.234-.225.474-.344.719l-.264.569c-.663 1.503-1.332 3.064-2 4.673-2.583 6.223-3.722 10.59-3.592 13.234.015.31.077.535.158.617.13.131.33.184.624.184 1.106 0 2.256-.566 3.28-1.554A9.002 9.002 0 0 0 16 18a9.002 9.002 0 0 0 4.152 7.15c1.024.988 2.174 1.554 3.28 1.554.294 0 .494-.053.624-.184.081-.082.143-.307.158-.617.13-2.644-.809-7.011-3.592-13.234l-1.92-4.63l-.285-.623c-.115-.24-.226-.474-.333-.7l-.274-.575c-.23-.474-.431-.885-.609-1.229l-.54-1.04C18.053 3.539 17.24 3 16 3zm0 7c2.209 0 4 1.791 4 4 0 1.21-.54 2.295-1.393 3.03l-.155.127a3.996 3.996 0 0 1-2.452.843c-2.209 0-4-1.791-4-4s1.791-4 4-4zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                    </svg>
+                    <span class="logo-text">airbnb</span>
+                </div>
+
+                <div class="search-bar-container">
+                    <button class="search-bar-toggle">
+                        <span class="search-text">Anywhere</span>
+                        <span class="divider"></span>
+                        <span class="search-text">Any week</span>
+                        <span class="divider"></span>
+                        <span class="search-icon-wrapper">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                                <g fill="none">
+                                    <path d="m13 24c6.0751322 0 11-4.9248678 11-11s-4.9248678-11-11-11-11 4.9248678-11
+                                        11 4.9248678 11 11 11zm8-3 9 9"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="search-expanded visually-hidden">
+                        <div class="search-form">
+                            <div class="search-input-group first">
+                                <label>Where</label>
+                                <input type="text" placeholder="Search destinations">
+                            </div>
+                            <div class="divider"></div>
+                            <div class="search-input-group">
+                                <label>Check in</label>
+                                <span>Add dates</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="search-input-group">
+                                <label>Check out</label>
+                                <span>Add dates</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="search-input-group last">
+                                <button class="search-submit-btn">
+                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        role="presentation" focusable="false"
+                                        style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                        <g fill="none">
+                                            <path d="m13 24c6.0751322 0 11-4.9248678 11-11s-4.9248678-11-11-11-11
+                                                4.9248678-11 11 4.9248678 11 11 11zm8-3 9 9"></path>
+                                        </g>
+                                    </svg>
+                                    <span>Search</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="user-nav">
+                    <a href="#" class="host-link">Airbnb your home</a>
+                    <button class="globe-btn">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            role="presentation" focusable="false"
+                            style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                            <path
+                                d="M8 .25a7.75 7.75 0 1 0 0 15.5A7.75 7.75 0 0 0 8 .25zm5.404 4.5H10.43a11.3 11.3 0 0 0-1.077-3.003 6.27 6.27 0 0 1 4.051 3.003zM8 1.776a9.78 9.78 0 0 1 1.343 2.974H6.657A9.78 9.78 0 0 1 8 1.776zM1.545 10.75a6.252 6.252 0 0 1 0-5.5H4.6a12.607 12.607 0 0 0 0 5.5H1.545zM4.755 4.75H2.596a6.27 6.27 0 0 1 4.051-3.003A11.3 11.3 0 0 0 5.57 4.75zm1.004 6h-3.16a6.27 6.27 0 0 1 0-5.5h3.16a11.108 11.108 0 0 0 0 5.5zm1.184 1.5H6.657a9.78 9.78 0 0 1-1.343 2.974 9.78 9.78 0 0 1 1.343-2.974zm1.057 0h2.686a9.78 9.78 0 0 1-1.343 2.974 9.78 9.78 0 0 1-1.343-2.974zm3.43 0a11.3 11.3 0 0 0 1.077 3.003 6.27 6.27 0 0 1-4.051-3.003h2.974zm.516-1.5h3.16a6.27 6.27 0 0 1 0 5.5h-3.16a11.108 11.108 0 0 0 0-5.5zm-.184-1.5h-4.6a12.607 12.607 0 0 0 0-5.5h4.6a12.607 12.607 0 0 0 0 5.5zm-.772-4.5h2.159a6.27 6.27 0 0 1-4.051 3.003 11.3 11.3 0 0 0 1.892-3.003z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="user-menu-btn">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            role="presentation" focusable="false"
+                            style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                            <g fill="none">
+                                <path d="m2 16h28m-28 8h28m-28-16h28"></path>
+                            </g>
+                        </svg>
+                        <div class="user-avatar">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; height: 100%; width: 100%; fill: #717171;">
+                                <path d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863
+                                    15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0
+                                    0 1 20.176 0c-2.328 2.926-5.912 4.81-10.243 4.81zm-6.108-6.14a10.428 10.428 0 0 0
+                                    12.216 0c-1.385-2.228-3.606-3.76-6.108-3.76s-4.723 1.532-6.108
+                                    3.76zm6.108-5.36c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="categories-wrapper">
+                <div class="container categories-container">
+                    <button class="scroll-btn prev" aria-label="Previous categories">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            role="presentation" focusable="false"
+                            style="display:block; fill:none; height:12px; width:12px; stroke:currentColor; stroke-width:5.33333; overflow:visible;">
+
+                            <g fill="none">
+                                <path
+                                    d="M20 28L8.70710678 16.7071068c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136L20 4" />
+                            </g>
+
+                        </svg>
+                    </button>
+
+                    <div class="categories-scroll"></div>
+
+                    <button class="scroll-btn next" aria-label="Next categories">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            role="presentation" focusable="false" style="display: block; fill: none; height: 12px;
+                            width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                            <g fill="none">
+                                <path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0
+                                    1.4142136l-11.2928932 11.2928932"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="container listings-grid">
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-left">
+                    <span>© 2026 Airbnb Clone</span>
+                    <span class="dot">·</span>
+                    <a href="#">Privacy</a>
+                    <span class="dot">·</span>
+                    <a href="#">Terms</a>
+                    <span class="dot">·</span>
+                    <a href="#">Sitemap</a>
+                </div>
+                <div class="footer-right">
+                    <button class="footer-lang">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            role="presentation" focusable="false" style="display: block; height: 16px; width: 16px;
+                            fill: currentcolor;">
+                            <path d="M8 .25a7.75 7.75 0 1 0 0 15.5A7.75 7.75 0 0 0 8 .25zm5.404 4.5H10.43a11.3 11.3 0 0
+                                0-1.077-3.003 6.27 6.27 0 0 1 4.051 3.003zM8 1.776a9.78 9.78 0 0 1 1.343
+                                2.974H6.657A9.78 9.78 0 0 1 8 1.776zM1.545 10.75a6.252 6.252 0 0 1 0-5.5H4.6a12.607
+                                12.607 0 0 0 0 5.5H1.545zM4.755 4.75H2.596a6.27 6.27 0 0 1 4.051-3.003A11.3 11.3 0 0 0
+                                5.57 4.75zm1.004 6h-3.16a6.27 6.27 0 0 1 0-5.5h3.16a11.108 11.108 0 0 0 0 5.5zm1.184
+                                1.5H6.657a9.78 9.78 0 0 1-1.343 2.974 9.78 9.78 0 0 1 1.343-2.974zm1.057 0h2.686a9.78
+                                9.78 0 0 1-1.343 2.974 9.78 9.78 0 0 1-1.343-2.974zm3.43 0a11.3 11.3 0 0 0 1.077 3.003
+                                6.27 6.27 0 0 1-4.051-3.003h2.974zm.516-1.5h3.16a6.27 6.27 0 0 1 0 5.5h-3.16a11.108
+                                11.108 0 0 0 0-5.5zm-.184-1.5h-4.6a12.607 12.607 0 0 0 0-5.5h4.6a12.607 12.607 0 0 0 0
+                                5.5zm-.772-4.5h2.159a6.27 6.27 0 0 1-4.051 3.003 11.3 11.3 0 0 0 1.892-3.003z"></path>
+                        </svg>
+                        English (US)
+                    </button>
+                    <button class="footer-currency">
+                        $ USD
+                    </button>
+                    <a href="#" class="footer-support">Support & resources</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
